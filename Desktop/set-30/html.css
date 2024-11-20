@@ -1,0 +1,10 @@
+form{ 
+    color: deeppink;
+}
+thead{
+    color: indigo;
+}
+tr{
+    color: brown;
+    font-style: italic;
+}
