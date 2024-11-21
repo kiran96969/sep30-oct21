@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><h2>student details<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title> 
+    <link rel="stylesheet" href="html.css">
+</h2>
+<body>
+    <form method="get">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" disabled="">   
+
+
+
+        <br>
+
+
+        <label for="">Email</label>
+        <input type="email" name="email" value="" >
+        <br>
+        <label for="">Mobile</label>
+        <input type="number" name="mobile" required="">
+        <br>
+
+        <label>Gender</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+
+        <br>
+
+        <label>Skills</label>
+        <input type="checkbox" name="skills" id="python" value="python">
+        <label for="python">Python</label>
+        <input type="checkbox" name="skills" id="java" value="java">
+        <label for="java">Java</label>
+        <input type="checkbox" name="skills" id="sql" value="sql">
+        <label for="sql">SQL</label>
+        <br>
+        
+        <label for="state">State</label>
+        <select name="state" id="state">
+            <option value="">Select</option>
+            <option value="ap">Andra Pradesh</option>
+            <option value="ts">Telangana</option>
+            <option value="ks">Karnataka</option>
+        </select>
+        <br>
+
+        <label>State</label>
+        <input name="" id="state" list="state-list">
+        <datalist id="state-list">
+            <option value="">Select</option>
+            <option value="Andra Pradesh"></option>
+            <option value="Telangana"></option>
+            <option value="Karnataka"></option>
+        </datalist>
+
+        <br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+</head>
+<body>
+  
+  
+  
+  <br>
+    <table border="3">
+        <h2>student</h2>
+        <thead>
+            <tr>
+                <th>student name</th>
+                <th>student id</th>
+                <th>studennt branch</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="">khan</td>
+             <td>234</td>
+                <td>B.com</td>
+            </tr>
+            <tr>
+                <td>lokesh</td>
+
+                <td>546</td>
+                <td>M.com</td>
+            </tr>
+            <tr>
+                <td colspan="">nara</td>
+                <td>545</td>
+                <td>MBA</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
